@@ -9,6 +9,7 @@ public class Main
     {
         try
         {
+            //neues Objekt objektmapper und ausführen der readJson methode
             ObjectMapperWeather omw = new ObjectMapperWeather();
             System.out.println(omw.readJson());
         }

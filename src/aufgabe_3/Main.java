@@ -16,7 +16,7 @@ public class Main {
     {
 
         try {
-            File file = new File("aufgabe_2/weather.xml");
+            File file = new File("src/weather.xml");
             JAXBContext jaxbContext = JAXBContext.newInstance(aufgabe_2.Weather.class);
             Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
 
@@ -32,10 +32,7 @@ public class Main {
             wetter4.setDescription(wetter3.getDescription());
             wetter4.setIcon(wetter3.getIcon());
             JasonWriterObjectMapper jom = new JasonWriterObjectMapper();
-            jom.writeToJson((aufgabe_1.Weather) wetter4);
-
-
-
+            jom.writeToJson(wetter4);
 
 
         }

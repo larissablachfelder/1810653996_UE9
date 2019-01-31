@@ -10,7 +10,7 @@ import java.io.IOException;
 public class JasonWriterObjectMapper {
         ObjectMapper objectMapper = new ObjectMapper();
 
-        public void writeToJson(aufgabe_1.Weather w)
+        public void writeToJson(aufgabe_5.Weather w)
         {
             try{
                 String jsonString = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(w);

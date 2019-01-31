@@ -26,7 +26,7 @@ public class Main {
 
 
         marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-        marshaller.marshal(wetter2, new File("aufgabe_2/weather.xml"));
+        marshaller.marshal(wetter2, new File("src/weather.xml"));
         marshaller.marshal(wetter2, System.out);
     }
 }

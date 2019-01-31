@@ -1,6 +1,8 @@
 package aufgabe_2;
 
 
+import javax.xml.bind.annotation.*;
+
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlRootElement
 
@@ -11,12 +13,15 @@ public class Weather {
     private String main;
     @XmlElement(name = "description")
     private String description;
-    //@XmlElement(name = "icon") Aufgabe 4
+
+    //Aufgabe 4 das Element icon wird nicht mehr mit erstellt und dadurch auch nicht sichtbar
+    //@XmlElement(name = "icon")
     @XmlTransient
     private String icon;
 
     public Weather() {
     }
+
 
     public Weather(int id, String main, String description, String icon) {
         this.id = id;

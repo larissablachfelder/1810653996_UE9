@@ -1,8 +1,7 @@
 package aufgabe_1;
 
 
-public class Weather
-{
+public class Weather extends aufgabe_5.Weather {
     private int id;
     private String main;
     private String description;
